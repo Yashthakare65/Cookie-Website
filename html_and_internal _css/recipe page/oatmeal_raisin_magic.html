@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oatmeal Raisin Magic</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf0;
+      color: #3e3e3e;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d2691e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      color: #8b4513;
+      border-bottom: 2px solid #deb887;
+      padding-bottom: 5px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f4a460;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    .slider {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0%); }
+      25%  { transform: translateX(-100%); }
+      50%  { transform: translateX(-200%); }
+      75%  { transform: translateX(-300%); }
+      100% { transform: translateX(0%); }
+    }
+
+    #sidepanel {
+      background-color: #9f480a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0;
+      gap: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    #sidepanel a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    #sidepanel a:hover {
+      background-color: crimson;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍪🍇 Oatmeal Raisin Magic Cookies</h1>
+    <p>Warm, chewy comfort in every bite!</p>
+    <nav id="sidepanel">
+      <a href="homepage.html" target="_blank">HOME</a>
+      <a href="#">RECIPE INDEX</a>
+      <a href="#">COOKBOOK</a>
+      <a href="#">ABOUT</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slides">
+        <img src="img29.jpg" alt="Oatmeal Cookie 1">
+        <img src="img30.jpg" alt="Oatmeal Cookie 2">
+        <img src="img31.jpg" alt="Oatmeal Cookie 3">
+        <img src="img32.jpeg" alt="Oatmeal Cookie 4">
+      </div>
+    </div>
+
+    <p>These cookies are soft, chewy, and filled with the magical flavor of cinnamon, oats, and juicy raisins — the classic cookie that feels like home.</p>
+
+    <section>
+      <h2>🧂 Ingredients</h2>
+      <ul>
+        <li>1 cup unsalted butter (softened)</li>
+        <li>1 cup brown sugar</li>
+        <li>½ cup white sugar</li>
+        <li>2 large eggs</li>
+        <li>1 tsp vanilla extract</li>
+        <li>1½ cups all-purpose flour</li>
+        <li>1 tsp baking soda</li>
+        <li>1 tsp ground cinnamon</li>
+        <li>½ tsp salt</li>
+        <li>3 cups rolled oats</li>
+        <li>1 cup raisins</li>
+        <li>Optional: ½ cup chopped walnuts</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>👩‍🍳 Instructions</h2>
+      <ol>
+        <li>Preheat oven to 350°F (175°C) and line baking sheets with parchment paper.</li>
+        <li>In a large bowl, cream butter and both sugars until fluffy.</li>
+        <li>Add eggs and vanilla, beating well.</li>
+        <li>In another bowl, whisk together flour, baking soda, cinnamon, and salt.</li>
+        <li>Gradually add dry ingredients to the wet mixture.</li>
+        <li>Stir in oats, raisins, and walnuts if using.</li>
+        <li>Scoop onto baking sheet and flatten slightly.</li>
+        <li>Bake 10–12 minutes or until golden brown around the edges.</li>
+        <li>Let cool for 5 minutes & enjoy the nostalgic magic! ✨</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yash Thakare 🍴</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Index</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf0;
+      color: #333;
+    }
+
+    header {
+      background-color: #d2691e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #sidepanel {
+      background-color: #9f480a;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    #sidepanel a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    #sidepanel a:hover {
+      background-color: crimson;
+      transform: scale(1.1);
+    }
+
+    .recipes {
+      max-width: 800px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .card {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-left: 6px solid #d2691e;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      color: #8b4513;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    footer {
+      background-color: #f4a460;
+      text-align: center;
+      padding: 12px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .recipes {
+        padding: 0 10px;
+      }
+
+      .card img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍪 Recipe Index</h1>
+    <p>Explore our delicious collection of cookie creations!</p>
+    <nav id="sidepanel">
+      <a href="/starting page/homepage.html" target="_self">HOME</a>
+      <a href="/Nav Bar/recipe_index.html" target="_self">RECIPE INDEX</a>
+      <a href="/Nav Bar/cookbook.html" target="_self">COOKBOOK</a>
+      <a href="/Nav Bar/about.html" target="_self">ABOUT</a>
+    </nav>
+  </header>
+
+  <section class="recipes">
+    <div class="card">
+      <a href="/recipe page/classic_chocolate_chip.html" target="_self">
+        <img src="/all images/imghome1.png" alt="Classic Cookies">
+      </a>
+      <h3>Classic Chocolate Chip</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/double_chocolate_chunk.html" target="_self">
+        <img src="/all images/homeimg2.jpg" alt="Double Choco">
+      </a>
+      <h3>Double Chocolate Chunk</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/nutty_crunch_delight.html" target="_self">
+        <img src="/all images/homeimg3.jpeg" alt="Nutty Cookies">
+      </a>
+      <h3>Nutty Crunch Delight</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/caramel_swirl_bliss.html" target="_self">
+        <img src="/all images/homeimg4.jpeg" alt="Caramel Swirl Bliss">
+      </a>
+      <h3>Caramel Swirl Bliss</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/peanut_butter_burst.html" target="_self">
+        <img src="/all images/homeimg5.jpg" alt="Peanut Butter Burst">
+      </a>
+      <h3>Peanut Butter Burst</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/mocha_fudge_fantasy.html" target="_self">
+        <img src="/all images/homeimg6.jpg" alt="Mocha Fudge Fantasy">
+      </a>
+      <h3>Mocha Fudge Fantasy</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/white_chocolate_dream.html" target="_self">
+        <img src="/all images/homeimg7.jpg" alt="White Chocolate Dream">
+      </a>
+      <h3>White Chocolate Dream</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/oatmeal_raisin_magic.html" target="_self">
+        <img src="/all images/homeimg8.jpg" alt="Oatmeal Raisin Magic">
+      </a>
+      <h3>Oatmeal Raisin Magic</h3>
+    </div>
+
+    <div class="card">
+      <a href="/recipe page/cinnamon_sugar_spark.html" target="_self">
+        <img src="/all images/homeimg9.jpg" alt="Cinnamon Sugar Spark">
+      </a>
+      <h3>Cinnamon Sugar Spark</h3>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yash Thakare 🍴</p>
+  </footer>
+</body>
+</html>

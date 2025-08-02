@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Double Chocolate Chunk</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf0;
+      color: #3e3e3e;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d2691e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      color: #8b4513;
+      border-bottom: 2px solid #deb887;
+      padding-bottom: 5px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f4a460;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    .slider {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0%); }
+      25%  { transform: translateX(-100%); }
+      50%  { transform: translateX(-200%); }
+      75%  { transform: translateX(-300%); }
+      100% { transform: translateX(0%); }
+    }
+
+    #sidepanel {
+      background-color: #9f480a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0;
+      gap: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    #sidepanel a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    #sidepanel a:hover {
+      background-color: crimson;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍫 Double Chocolate Chunk Cookies</h1>
+    <p>Extra chocolate, extra deliciousness!</p>
+    <nav id="sidepanel">
+      <a href="homepage.html" target="_blank">HOME</a>
+      <a href="#">RECIPE INDEX</a>
+      <a href="#">COOKBOOK</a>
+      <a href="#">ABOUT</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slides">
+        <img src="img5.jpg" alt="Cookies 1">
+        <img src="img6.jpg" alt="Cookies 2">
+        <img src="img7.jpg" alt="Cookies 3">
+        <img src="img8.jpeg" alt="Cookies 4">
+      </div>
+    </div>
+
+    <p>Rich, gooey, and packed with double the chocolate! These cookies are a dream for any chocolate lover.</p>
+
+    <section>
+      <h2>🧂 Ingredients</h2>
+      <ul>
+        <li>1½ cups all-purpose flour</li>
+        <li>½ cup unsweetened cocoa powder</li>
+        <li>1 tsp baking soda</li>
+        <li>¼ tsp salt</li>
+        <li>1 cup butter (softened)</li>
+        <li>1 cup brown sugar</li>
+        <li>½ cup white sugar</li>
+        <li>2 large eggs</li>
+        <li>1 tsp vanilla extract</li>
+        <li>1½ cups semisweet chocolate chunks</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>👩‍🍳 Instructions</h2>
+      <ol>
+        <li>Preheat oven to 350°F (175°C).</li>
+        <li>In a bowl, mix flour, cocoa powder, baking soda, and salt.</li>
+        <li>In another bowl, beat butter and sugars until creamy.</li>
+        <li>Add eggs one at a time, then vanilla.</li>
+        <li>Gradually add the dry mixture and mix until combined.</li>
+        <li>Stir in chocolate chunks.</li>
+        <li>Scoop dough onto baking sheet and slightly flatten.</li>
+        <li>Bake for 10–12 minutes or until edges are set.</li>
+        <li>Let cool slightly and enjoy the rich, fudgy goodness! 🍫</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yash Thakare 🍴</p>
+  </footer>
+</body>
+</html>

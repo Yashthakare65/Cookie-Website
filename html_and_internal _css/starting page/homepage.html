@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Cookie Delights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset & Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf0;
+      color: #3e3e3e;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #8B4513;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #a0522d;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background-image: url("img3.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    /* Scrolling Image Section */
+    .scroll-container {
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #ffe4c4;
+      padding: 4px ;
+      border-radius: 12px;
+    }
+
+    .scroll-images {
+      display: inline-flex;
+      animation: scroll-left 30s linear infinite;
+    }
+
+    .scroll-images img {
+      width: 300px;
+      height: 200px;
+      margin: 0 10px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Welcome Section */
+    .welcome {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .welcome h2 {
+      font-size: 32px;
+      color: #8B4513;
+      margin-bottom: 20px;
+    }
+
+    .welcome p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Recipe Teasers */
+    .recipes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 15px;
+      color: #8B4513;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #deb887;
+      padding: 20px;
+      color: #333;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 30px;
+        padding: 10px;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="/starting page/homepage.html" target="_self">HOME</a>
+    <a href="/Nav Bar/recipe_index.html" target="_blank">RECIPE INDEX</a>
+    <a href="/Nav Bar/cookbook.html" target="_blank">COOKBOOK</a>
+    <a href="/Nav Bar/about.html">ABOUT</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="scroll-container">
+    <div class="scroll-images">
+      <!-- Repeated twice for seamless loop -->
+      <img src="/all images/img1.jpg" alt="Cookies 1">
+      <img src="/all images/img2.jpg" alt="Cookies 2">
+      <img src="/all images/img3.jpg" alt="Cookies 3">
+      <img src="/all images/img4.jpeg" alt="Cookies 4">
+      <!-- Duplicate for infinite loop illusion -->
+      <img src="/all images/imghome1.png" alt="Cookies 5">
+      <img src="/all images/homeimg2.jpg" alt="Cookies 6">
+      <img src="/all images/homeimg3.jpeg" alt="Cookies 7">
+      <img src="/all images/homeimg4.jpeg" alt="Cookies 8">
+      <img src="/all images/homeimg5.jpg" alt="Cookies 9">
+      <img src="/all images/homeimg6.jpg" alt="Cookies 10">
+      <img src="/all images/homeimg7.jpg" alt="Cookies 11">
+      <img src="/all images/homeimg8.jpg" alt="Cookies 12">
+      <img src="/all images/homeimg9.jpg" alt="Cookies 13">
+
+    </div>
+  </div>
+    <h1>Welcome to Cookie Delights 🍪</h1>
+  </section>
+
+  
+
+  <!-- Welcome Text -->
+  <section class="welcome">
+    <h2>Made With Love & Chocolate</h2>
+    <p>
+      Discover the best recipes for homemade cookies, warm from the oven and filled with memories. Whether you’re a first-time baker or a kitchen pro, Cookie Delights is your sweet spot for gooey, crunchy, and chocolate-packed treats.
+    </p>
+  </section>
+
+  <!-- Featured Recipes -->
+  <section class="recipes">
+    <div class="card">
+      <a href="/recipe page/classic_chocolate_chip.html" target="_blank"><img src="/all images/imghome1.png" alt="Classic Cookies"></a>
+      <h3>Classic Chocolate Chip</h3>
+    </div>
+
+    <div class="card">
+       <a href="/recipe page/double_chocolate_chunk.html" target="_blank"><img src="/all images/homeimg2.jpg" alt="Double Choco"></a>
+      <h3>Double Chocolate Chunk</h3>
+    </div>
+
+    <div class="card">
+       <a href="/recipe page/nutty_crunch_delight.html" target="_blank"><img src="/all images/homeimg3.jpeg" alt="Nutty Cookies"></a>
+      <h3>Nutty Crunch Delight</h3>
+    </div>
+    <div class="card">
+       <a href="/recipe page/caramel_swirl_bliss.html" target="_blank"><img src="/all images/homeimg4.jpeg" alt="Caramel Swirl Bliss"></a>
+      <h3>Caramel Swirl Bliss</h3>
+    </div>
+    <div class="card">
+       <a href="/recipe page/peanut_butter_burst.html" target="_blank"><img src="/all images/homeimg5.jpg" alt="Peanut Butter Burst"></a>
+      <h3>Peanut Butter Burst</h3>
+    </div>
+    <div class="card">
+       <a href="/recipe page/mocha_fudge_fantasy.html" target="_blank"><img src="/all images/homeimg6.jpg" alt="Mocha Fudge Fantasy"></a>
+      <h3>Mocha Fudge Fantasy</h3>
+    </div>
+    <div class="card">
+       <a href="/recipe page/white_chocolate_dream.html" target="_blank"><img src="/all images/homeimg7.jpg" alt="White Chocolate Dream"></a>
+      <h3>White Chocolate Dream</h3>
+    </div>
+    <div class="card">
+       <a href="/recipe page/oatmeal_raisin_magic.html" target="_blank"><img src="/all images/homeimg8.jpg" alt="Oatmeal Raisin Magic"></a>
+      <h3>Oatmeal Raisin Magic</h3>
+    </div>
+    <div class="card">
+       <a href="/recipe page/cinnamon_sugar_spark.html" target="_blank"><img src="/all images/homeimg9.jpg" alt="Cinnamon Sugar Spark"></a>
+      <h3>Cinnamon Sugar Spark</h3>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Yash Thakare 🍫
+  </footer>
+
+</body>
+</html>
