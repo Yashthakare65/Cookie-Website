@@ -18,27 +18,87 @@
       color: #3e3e3e;
     }
 
-    /* Navigation Bar */
-    nav {
-      background-color: #8B4513;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-    }
+    /*Nav Bar*/
+      /* Base Styling */
+.navbar {
+  background-color: #8B4513;
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 14px;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
 
-    nav a:hover {
-      background-color: #a0522d;
-    }
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  background-color: #FFD700;
+  color: #8B4513;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Checkbox hidden */
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #A0522D;
+    padding: 10px 0;
+    z-index: 1;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
 
     /* Hero Banner */
     .hero {
@@ -169,32 +229,41 @@
 <body>
 
   <!-- Navigation -->
-  <nav>
-    <a href="index.html" target="_self">HOME</a>
-    <a href="/html_and_internal _css/Nav Bar/recipe_index.html" target="_blank">RECIPE INDEX</a>
-    <a href="/html_and_internal _css/Nav Bar/cookbook.html" target="_blank">COOKBOOK</a>
-    <a href="/html_and_internal _css/Nav Bar/about.html">ABOUT</a>
-  </nav>
+  <header>
+  <div class="navbar">
+    <div class="logo">🍪 Cookie Delights</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="html_and_internal_css/nav_bar/recipe_index.html">RECIPE INDEX</a>
+      <a href="html_and_internal_css/nav_bar/cookbook.html">COOKBOOK</a>
+      <a href="html_and_internal_css/nav_bar/about.html">ABOUT</a>
+    </nav>
+  </div>
+</header>
+
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="scroll-container">
     <div class="scroll-images">
       <!-- Repeated twice for seamless loop -->
-      <img src="/html_and_internal _css/all images/img1.jpg" alt="Cookies 1">
-      <img src="/html_and_internal _css/all images/img2.jpg" alt="Cookies 2">
-      <img src="/html_and_internal _css/all images/img3.jpg" alt="Cookies 3">
-      <img src="/html_and_internal _css/all images/img4.jpeg" alt="Cookies 4">
+      <img src="html_and_internal_css/all_images/img1.jpg" alt="Cookies 1">
+      <img src="html_and_internal_css/all_images/img2.jpg" alt="Cookies 2">
+      <img src="html_and_internal_css/all_images/img3.jpg" alt="Cookies 3">
+      <img src="html_and_internal_css/all_images/img4.jpeg" alt="Cookies 4">
       <!-- Duplicate for infinite loop illusion -->
-      <img src="/html_and_internal _css/all images/imghome1.png" alt="Cookies 5">
-      <img src="/html_and_internal _css/all images/homeimg2.jpg" alt="Cookies 6">
-      <img src="/html_and_internal _css/all images/homeimg3.jpeg" alt="Cookies 7">
-      <img src="/html_and_internal _css/all images/homeimg4.jpeg" alt="Cookies 8">
-      <img src="/html_and_internal _css/all images/homeimg5.jpg" alt="Cookies 9">
-      <img src="/html_and_internal _css/all images/homeimg6.jpg" alt="Cookies 10">
-      <img src="/html_and_internal _css/all images/homeimg7.jpg" alt="Cookies 11">
-      <img src="/html_and_internal _css/all images/homeimg8.jpg" alt="Cookies 12">
-      <img src="/html_and_internal _css/all images/homeimg9.jpg" alt="Cookies 13">
+      <img src="html_and_internal_css/all_images/imghome1.png" alt="Cookies 5">
+      <img src="html_and_internal_css/all_images/homeimg2.jpg" alt="Cookies 6">
+      <img src="html_and_internal_css/all_images/homeimg3.jpeg" alt="Cookies 7">
+      <img src="html_and_internal_css/all_images/homeimg4.jpeg" alt="Cookies 8">
+      <img src="html_and_internal_css/all_images/homeimg5.jpg" alt="Cookies 9">
+      <img src="html_and_internal_css/all_images/homeimg6.jpg" alt="Cookies 10">
+      <img src="html_and_internal_css/all_images/homeimg7.jpg" alt="Cookies 11">
+      <img src="html_and_internal_css/all_images/homeimg8.jpg" alt="Cookies 12">
+      <img src="html_and_internal_css/all_images/homeimg9.jpg" alt="Cookies 13">
 
     </div>
   </div>
@@ -214,41 +283,41 @@
   <!-- Featured Recipes -->
   <section class="recipes">
     <div class="card">
-      <a href="/html_and_internal _css/recipe page/classic_chocolate_chip.html" target="_blank"><img src="/html_and_internal _css/all images/imghome1.png" alt="Classic Cookies"></a>
+      <a href="html_and_internal_css/recipe_page/classic_chocolate_chip.html" target="_blank"><img src="html_and_internal_css/all_images/imghome1.png" alt="Classic Cookies"></a>
       <h3>Classic Chocolate Chip</h3>
     </div>
 
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/double_chocolate_chunk.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg2.jpg" alt="Double Choco"></a>
+       <a href="html_and_internal_css/recipe_page/double_chocolate_chunk.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg2.jpg" alt="Double Choco"></a>
       <h3>Double Chocolate Chunk</h3>
     </div>
 
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/nutty_crunch_delight.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg3.jpeg" alt="Nutty Cookies"></a>
+       <a href="html_and_internal_css/recipe_page/nutty_crunch_delight.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg3.jpeg" alt="Nutty Cookies"></a>
       <h3>Nutty Crunch Delight</h3>
     </div>
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/caramel_swirl_bliss.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg4.jpeg" alt="Caramel Swirl Bliss"></a>
+       <a href="html_and_internal_css/recipe_page/caramel_swirl_bliss.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg4.jpeg" alt="Caramel Swirl Bliss"></a>
       <h3>Caramel Swirl Bliss</h3>
     </div>
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/peanut_butter_burst.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg5.jpg" alt="Peanut Butter Burst"></a>
+       <a href="html_and_internal_css/recipe_page/peanut_butter_burst.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg5.jpg" alt="Peanut Butter Burst"></a>
       <h3>Peanut Butter Burst</h3>
     </div>
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/mocha_fudge_fantasy.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg6.jpg" alt="Mocha Fudge Fantasy"></a>
+       <a href="html_and_internal_css/recipe_page/mocha_fudge_fantasy.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg6.jpg" alt="Mocha Fudge Fantasy"></a>
       <h3>Mocha Fudge Fantasy</h3>
     </div>
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/white_chocolate_dream.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg7.jpg" alt="White Chocolate Dream"></a>
+       <a href="html_and_internal_css/recipe_page/white_chocolate_dream.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg7.jpg" alt="White Chocolate Dream"></a>
       <h3>White Chocolate Dream</h3>
     </div>
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/oatmeal_raisin_magic.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg8.jpg" alt="Oatmeal Raisin Magic"></a>
+       <a href="html_and_internal_css/recipe_page/oatmeal_raisin_magic.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg8.jpg" alt="Oatmeal Raisin Magic"></a>
       <h3>Oatmeal Raisin Magic</h3>
     </div>
     <div class="card">
-       <a href="/html_and_internal _css/recipe page/cinnamon_sugar_spark.html" target="_blank"><img src="/html_and_internal _css/all images/homeimg9.jpg" alt="Cinnamon Sugar Spark"></a>
+       <a href="html_and_internal_css/recipe_page/cinnamon_sugar_spark.html" target="_blank"><img src="html_and_internal_css/all_images/homeimg9.jpg" alt="Cinnamon Sugar Spark"></a>
       <h3>Cinnamon Sugar Spark</h3>
     </div>
   </section>
